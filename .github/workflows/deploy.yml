@@ -2,7 +2,8 @@ name: Deploy para GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -22,7 +23,7 @@ jobs:
       - name: Upload dos arquivos
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./
+          path: ./  # Publica todos os arquivos da raiz
 
   deploy:
     needs: build
