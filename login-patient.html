@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Paciente - Sistema de Agendamento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Login do Paciente</h1>
+    </header>
+    <main>
+        <div class="login-form-container">
+            <form id="form-login-patient" class="login-form">
+                <h2>Acesse suas Consultas</h2>
+                <div class="error-login" id="error-login-patient"></div>
+                <div>
+                    <label for="patient-login-email">Email:</label>
+                    <input type="email" id="patient-login-email" required>
+                </div>
+                <div>
+                    <label for="patient-login-password">Senha:</label>
+                    <input type="password" id="patient-login-password" required>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Entrar</button>
+            </form>
+            <p class="text-center mt-10">Não tem cadastro? Peça para a secretária criar sua conta.</p>
+            <p class="text-center mt-20"><a href="index.html">Voltar para a página inicial</a></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Seu SaaS de Agendamento</p>
+    </footer>
+    <script src="js/db.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/login-patient.js"></script>
+</body>
+</html>
